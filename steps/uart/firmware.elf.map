@@ -1,0 +1,178 @@
+
+Discarded input sections
+
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .group         0x00000000        0xc C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .text          0x00000000        0x0 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .data          0x00000000        0x0 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .bss           0x00000000        0x0 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .text.delay    0x00000000       0x14 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .bss.increment
+                0x00000000        0x8 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00080000         xr
+sram             0x20000000         0x00020000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+LOAD c:/program files/pros/toolchain/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a
+LOAD c:/program files/pros/toolchain/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a
+                0x20020000                _estack = (ORIGIN (sram) + LENGTH (sram))
+
+.vectors        0x08000000      0x1c4
+ *(.vectors)
+ .vectors       0x08000000      0x1c4 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+                0x08000000                tab
+
+.text           0x080001c4      0x1c4
+ *(.text*)
+ .text.gpio_set_mode
+                0x080001c4       0x38 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .text.SysTick_Handler
+                0x080001fc       0x10 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+                0x080001fc                SysTick_Handler
+ .text.gpio_set_af.constprop.5
+                0x0800020c       0x32 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .text.timer_expired
+                0x0800023e       0x2c C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+                0x0800023e                timer_expired
+ *fill*         0x0800026a        0x2 
+ .text.startup.main
+                0x0800026c       0xe0 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+                0x0800026c                main
+ .text._reset   0x0800034c       0x3c C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+                0x0800034c                _reset
+
+.glue_7         0x08000388        0x0
+ .glue_7        0x08000388        0x0 linker stubs
+
+.glue_7t        0x08000388        0x0
+ .glue_7t       0x08000388        0x0 linker stubs
+
+.vfp11_veneer   0x08000388        0x0
+ .vfp11_veneer  0x08000388        0x0 linker stubs
+
+.v4_bx          0x08000388        0x0
+ .v4_bx         0x08000388        0x0 linker stubs
+
+.iplt           0x08000388        0x0
+ .iplt          0x08000388        0x0 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.rodata         0x08000388        0x5
+ *(.rodata*)
+ .rodata.main.str1.1
+                0x08000388        0x5 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.rel.dyn        0x08000390        0x0
+ .rel.iplt      0x08000390        0x0 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.data           0x20000000        0x0 load address 0x0800038d
+                0x20000000                _sdata = .
+ *(.first_data)
+ *(.data SORT_BY_NAME(.data*))
+                0x20000000                _edata = .
+                0x0800038d                _sidata = LOADADDR (.data)
+
+.igot.plt       0x20000000        0x0 load address 0x0800038d
+ .igot.plt      0x20000000        0x0 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.bss            0x20000000        0x8 load address 0x0800038d
+                0x20000000                _sbss = .
+ *(.bss SORT_BY_NAME(.bss.*) COMMON)
+ .bss.led_on    0x20000000        0x1 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+                0x20000000                led_on
+ *fill*         0x20000001        0x3 
+ .bss.s_ticks   0x20000004        0x4 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+                0x20000008                _ebss = .
+OUTPUT(firmware.elf elf32-littlearm)
+
+.debug_info     0x00000000     0x1121
+ .debug_info    0x00000000     0x1121 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.debug_abbrev   0x00000000      0x3bf
+ .debug_abbrev  0x00000000      0x3bf C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.debug_loc      0x00000000      0x314
+ .debug_loc     0x00000000      0x314 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.debug_aranges  0x00000000       0x50
+ .debug_aranges
+                0x00000000       0x50 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.debug_ranges   0x00000000       0xd8
+ .debug_ranges  0x00000000       0xd8 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.debug_macro    0x00000000     0x1d7e
+ .debug_macro   0x00000000      0x192 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000192      0xa4e C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000be0       0x22 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000c02       0x40 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000c42       0x17 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000c59       0x8d C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000ce6       0x3c C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000d22       0xef C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000e11       0xa2 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000eb3       0x57 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000f0a       0x6a C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00000f74      0x1df C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00001153       0x82 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x000011d5      0x460 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00001635       0x22 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00001657       0x16 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x0000166d       0x9e C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x0000170b       0x8d C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00001798       0x52 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x000017ea       0x1f C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00001809       0x43 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x0000184c       0x20 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x0000186c      0x1a3 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00001a0f      0x330 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00001d3f       0x16 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+ .debug_macro   0x00001d55       0x29 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.debug_line     0x00000000      0x38e
+ .debug_line    0x00000000      0x38e C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.debug_str      0x00000000     0x829f
+ .debug_str     0x00000000     0x829f C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+                               0x854a (size before relaxing)
+
+.comment        0x00000000       0x7e
+ .comment       0x00000000       0x7e C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+                                 0x7f (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x39
+ .ARM.attributes
+                0x00000000       0x39 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
+
+.debug_frame    0x00000000       0xa4
+ .debug_frame   0x00000000       0xa4 C:\Users\Jacob\AppData\Local\Temp\ccKauAkx.o
