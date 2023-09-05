@@ -1,17 +1,3 @@
-/**
- * @file startup.c
- * @author Jacob Chisholm (Jchisholm204.github.io)
- * @brief 
- * @version 0.1
- * @date 2023-09-02
- * 
- * @copyright Copyright (c) 2023
- * 
- */
-
-
-extern void main(void);
-
 // Startup Code
 // Loads main function from flash into SRAM on startup
 __attribute__((naked, noreturn)) void _reset(void) {
@@ -20,11 +6,14 @@ __attribute__((naked, noreturn)) void _reset(void) {
     for (long *dst = &_sbss; dst < &_ebss; dst++) *dst=0;
     for (long *dst =&_sdata, *src = &_sidata; dst < & _edata;) *dst ++ = *src++;
 
+    //call main()
+    extern void main(void);
     main(); // call main()
     for (;;) (void) 0; // infinite loop if main returns
 }
 
-extern void SysTick_Handler(void); // defined in main.c
+
+extern void SysTick_Handler(void);
 extern void _estack(void); // defined in link.ld
 
 // 16 standard (mandated by arm arch) and 97 stm32 entries (f446RE vector table (table 38))
