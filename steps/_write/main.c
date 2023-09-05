@@ -30,7 +30,8 @@ int main(void){
         if(timer_expired(&timer, period, s_ticks)){
             gpio_write(led1, led_on);
             led_on = !led_on;
-            //printf("LED: %d, Ticks: %lu\r\n", led_on, s_ticks);//bricks
+            printf("LED: %d, Ticks: %lu\r\n", led_on, s_ticks);//bricks
+            //uart_write_buf(UART2, "HI\n", 4);
         }
     }
     return 0;
